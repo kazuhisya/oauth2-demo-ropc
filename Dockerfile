@@ -5,9 +5,11 @@ MAINTAINER Kazuhisa Hara <khara@sios.com>
 
 RUN yum install -y --setopt=tsflags=nodocs \
         epel-release \
-        bash bash-completion && \
+        bash bash-completion \
+        vim && \
     yum install -y --setopt=tsflags=nodocs \
-        golang && \
+        golang \
+        vim-go&& \
     rm -rf /var/cache/yum
 
 WORKDIR /root
