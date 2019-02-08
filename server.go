@@ -76,7 +76,7 @@ func main() {
 	srv.SetAllowedGrantType(oauth2.PasswordCredentials)
 
 	// client authentication from GET pram
-	// e.g. &client_id=000000&client_secret=123456
+	// e.g. &client_id=APP01&client_secret=APPSEC
 	srv.SetClientInfoHandler(server.ClientFormHandler)
 
 	// password authentication from GET pram
