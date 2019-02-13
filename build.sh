@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t local/oauth2 .
-docker build -t local/oauth2:dev -f Dockerfile-dev .
+docker build -t local/oauth2:ropc .
+docker build -t local/oauth2:ropc-dev -f Dockerfile-dev .
